@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinasi | Wisata Miangkabau</title>
+    <link rel="stylesheet" href="style-2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container">
+         <nav>
+            <div class="menu">
+                 <div class="menu-toogle">
+                    <input type="checkbox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+            <ul class="navbar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="destinasi.html">Destinasion</a></li>
+                <li><a href="kuliner.html">Kuliner</a></li>
+                <li><a href="infromation.html">information</a></li>
+                <!-- <li><a href="">Maps</a></li> -->
+            </ul>
+            </div>
+        </nav>
+            <div class="destinasi">
+                <h1>Destinasi</h1>
+                <div class="gambar">
+                <div class="card">
+                    <a href=""><img src="destinasi/air-terjun-proklamator.jpg" alt=""></a>
+                        <div class="caption"><h2>Air terjun Proklamator</h2></div>
+                </div>
+                <div class="card"><a href=""><img src="destinasi/alahan.jpg" alt=""></a>
+                    <div class="caption"><h2>Alahan Panjang</h2></div>
+                </div>
+                <div class="card"><a href=""><img src="destinasi/angso-duo.jpg" alt=""></a>
+                    <div class="caption"><h2>Pulau Angso Duo</h2></div>
+                </div>
+                <div class="card"><a href=""><img src="destinasi/Goa-Batu-Kapal.jpg" alt=""></a>
+                    <div class="caption"><h2>Goa Batu Kapal</h2></div>
+                </div>
+                <div class="card"><a href=""><img src="destinasi/harau.jpeg" alt=""></a>
+                    <div class="caption"><h2>Lembah Harau</h2></div>
+                </div>
+                <div class="card"><a href=""><img src="destinasi/Lembah_Anai.jpg" alt=""></a>
+                    <div class="caption"><h2>Lembah Anai</h2></div>
+                </div>
+                <div class="card"><a href=""><img src="destinasi/Lobang-Jepang-Bukittinggi.jpg" alt=""></a>
+                    <div class="caption"><h2>Lobang Jepang</h2></div>
+                </div>
+                <div class="card"><a href=""><img src="destinasi/maninjau.jpg" alt=""></a>
+                    <div class="caption"><h2>Danau Maninjau</h2></div>
+                </div>
+                <div class="card"><a href=""><img src="destinasi/mato-aia.jpg" alt=""></a>
+                    <div class="caption"><h2>Mato Aia Paninggahan</h2></div>
+                </div>
+                <div class="card"><a href=""><img src="destinasi/mentawai.png" alt=""></a>
+                    <div class="caption"><h2>Pulau Mentawai</h2></div>
+                </div>
+                <div class="card"><a href=""><img src="destinasi/mesjid-raya-sumbar.jpg" alt=""></a>
+                    <div class="caption"><h2>Mesjid Raya Sumbar</h2></div>
+                </div>
+                <div class="card"><a href=""><img src="destinasi/ngalau-indah.jpg" alt=""></a>
+                    <div class="caption"><h2>Ngalau Indah</h2></div>
+                </div>
+                <div class="card"><a href=""><img src="destinasi/ngalau-pangian.jpg" alt=""></a>
+                    <div class="caption"><h2>Ngalau Indah Pangian</h2></div>
+                </div>
+                <div class="card"><a href=""><img src="destinasi/pantai-air-manis.jpg" alt=""></a>
+                    <div class="caption"><h2>Pantai Air Manis</h2></div>
+                </div>
+                <div class="card"><a href=""><img src="destinasi/puncak-pato.jpg" alt=""></a>
+                    <div class="caption"><h2>Puncak Pato</h2></div>
+                </div>
+            </div>
+            </div>
+            <footer>
+            <div class="foter">
+                <div class="logo-west">
+                    <img src="img/footer.png" alt="">
+                </div>
+                <div class="sosmed">
+                    <ul>
+                        <li><a href="" class="bi bi-instagram"></a></li>
+                        <li><a href="" class="bi bi-facebook"></a></li>
+                        <li><a href="" class="bi bi-youtube"></a></li>
+                        <li><a href="" class="bi bi-tiktok"></a></li>
+                    </ul>
+                </div>
+                <div class="line">
+                <span></span>
+                <p>Copyright Muhammad Adrian Efrichan 2025</p>
+                </div>
+            </div>
+        </footer>
+        
+    </div>
+     <script>
+const menuToggle = document.querySelector('.menu-toogle');
+const nav = document.querySelector('nav ul');
+const navbar = document.querySelector(".navbar");
+
+// Hamburger toggle
+menuToggle.addEventListener('click', function () {
+    nav.classList.toggle('slide');
+});
+
+// Scroll behavior
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+
+        // Hanya beri animasi jika layar di atas 768px
+        if (window.innerWidth > 768) {
+            navbar.style.animation = 'none';
+            navbar.offsetHeight; // force reflow
+            navbar.style.animation = 'popup 0.6s ease-out forwards';
+        }
+    }
+});
+</script>
+</body>
+</html>
